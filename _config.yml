@@ -1,5 +1,5 @@
 # basic configuration
-baseurl: learning_gem5
+baseurl: jlpteaching.github.io/learning_gem5
 markdown: kramdown
 permalink: /:categories/:title/
 

@@ -33,9 +33,44 @@
 
 	<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/modernizr-2.6.2.min.js"></script>
+
+  {% if base.url contains "jlpteaching" %}
+  <style type="text/css" media="screen">
+     * {
+       margin: 0;
+       padding: 0;
+     }
+
+     div#banner {
+       position: absolute;
+       top: 0;
+       left: 0;
+       background-color: #DDEEEE;
+       width: 100%;
+     }
+     div#banner-content {
+       width: 800px;
+       margin: 0 auto;
+       padding: 10px;
+       border: 1px solid #000;
+     }
+     div#main-content {
+       padding-top: 70px;
+    }
+  </style>
+  {% endif %}
+
 </head>
 <body {% if page.itemtype %}itemscope itemtype="{{ page.itemtype }}"{% endif %}
       class="{{ page.body-class }}">
+
+{% if base.url contains "jlpteaching" %}
+<div id="banner">
+  <div id="banner-content">
+    This is a draft of the Learning gem5 course. [Subscribe to gem5-users](http://www.gem5.org/mailing_lists/) for the announcement on this course.
+  </div>
+</div>
+{% endif %}
 
 {% include navigation.html %}
 
