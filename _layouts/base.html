@@ -42,10 +42,8 @@
      }
 
      div#banner-special {
-       position: absolute;
-       top: 0;
-       left: 0;
-       background-color: #DDEEEE;
+       background-color: orange;
+       color: #000;
        width: 100%;
      }
      div#banner-special-content {
@@ -64,17 +62,17 @@
 <body {% if page.itemtype %}itemscope itemtype="{{ page.itemtype }}"{% endif %}
       class="{{ page.body-class }}">
 
-{% if site.baseurl contains "jlpteaching" %}
-<div id="banner-special">
-  <div id="banner-special-content">
-    This is a draft of the Learning gem5 course. [Subscribe to gem5-users](http://www.gem5.org/mailing_lists/) for the announcement on this course.
-  </div>
-</div>
-{% endif %}
-
 {% include navigation.html %}
 
 {{ content }}
+
+{% if site.baseurl contains "jlpteaching" %}
+<div id="banner-special">
+  <div id="banner-special-content">
+    This is a draft of the Learning gem5 course. <a href="http://www.gem5.org/mailing_lists/">Subscribe to gem5-users</a> for the announcement on this course.
+  </div>
+</div>
+{% endif %}
 
 {% include footer.html %}
 
