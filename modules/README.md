@@ -62,4 +62,9 @@ The date determines the order of the sections in your module.
     - Virtual file system
     - System calls
     - Other things
-  -
+- Contributing to gem5
+  - Setting up a development environment
+  - Creating an account on gerrit
+  - Submitting your first patch
+  - Code review
+  - Becoming part of the community
