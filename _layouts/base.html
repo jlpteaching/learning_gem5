@@ -34,7 +34,7 @@
 	<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/modernizr-2.6.2.min.js"></script>
 
-  {% if base.url contains "jlpteaching" %}
+  {% if site.baseurl contains "jlpteaching" %}
   <style type="text/css" media="screen">
      * {
        margin: 0;
@@ -64,7 +64,7 @@
 <body {% if page.itemtype %}itemscope itemtype="{{ page.itemtype }}"{% endif %}
       class="{{ page.body-class }}">
 
-{% if base.url contains "jlpteaching" %}
+{% if site.baseurl contains "jlpteaching" %}
 <div id="banner">
   <div id="banner-content">
     This is a draft of the Learning gem5 course. [Subscribe to gem5-users](http://www.gem5.org/mailing_lists/) for the announcement on this course.
