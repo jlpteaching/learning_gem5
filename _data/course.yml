@@ -1,3 +1,3 @@
 title: Learning gem5
 description: Online course for learning gem5 from the ground up
-modules: [introduction, "using gem5"]
+modules: [introduction, "using gem5", "modifying and extending", "modeling cache coherence", "creating a cpu", "more gem5 internals", "contributing to gem5"]
