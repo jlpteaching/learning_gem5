@@ -7,6 +7,7 @@ Inside every module folder, you should create a special folder called `_posts`, 
 Inside the folder called `_posts`, you should create a file for every section in the module.
 The name of the file should start with the date in the format `YYYY-MM-DD-sectionname.md`.
 The date determines the order of the sections in your module.
+I've chosen to start all dates with Jan 1, 2020, but this was arbitrary.
 
 ## Learning gem5 modules
 
