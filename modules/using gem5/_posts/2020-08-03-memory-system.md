@@ -1,5 +1,5 @@
 ---
-title: The Memory System
+title: "The Memory System"
 ---
 
 This page is about the memory system.
@@ -14,6 +14,6 @@ This page is about the memory system.
 
 ## DRAM configuration
 
-## Testing the memory system
+## Synthetic traffic and testers
 
 ## Exercises

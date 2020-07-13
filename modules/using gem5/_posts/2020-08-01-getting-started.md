@@ -1,5 +1,5 @@
 ---
-title: Getting started with gem5
+title: "Getting started with gem5"
 ---
 
 This page is about getting started with gem5.
