@@ -20,12 +20,13 @@ section {
 }
 .jumbotron {
 	background: $jumbotron-color;
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	background-image: url('../img/#{$jumbotron-image}');
 	background-size: auto;
-	color: $white;
+	color: $gray-darker;
 	position: relative;
+	border-bottom-color: $gray-dark;
+	border-bottom: 5px solid;
+	max-width: 800px;
+	margin: auto;
 
 	a {
 		color: #fcfcfc;
@@ -36,6 +37,10 @@ section {
 	a:hover, a:focus {
 		border-bottom: none;
 		text-decoration: none;
+	}
+
+	img {
+		width: 300px;
 	}
 
 }

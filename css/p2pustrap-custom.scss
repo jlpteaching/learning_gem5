@@ -8,13 +8,7 @@
 {% if site.jumbotron_color %}
 	$jumbotron-color: {{ site.jumbotron_color }};
 {% else %}
- $jumbotron-color: $p2pu-blue;
-{% endif %}
-
-{% if site.jumbotron_background_image %}
-	$jumbotron-image: '{{ site.jumbotron_background_image }}';
-{% else %}
-	$jumbotron-image: 'banner.svg';
+    $jumbotron-color: $p2pu-blue;
 {% endif %}
 
 @import "common";
@@ -27,7 +21,7 @@
     overflow: hidden;
     background-color: #F3F4F8;
     padding: 1em;
-    
+
     h3 {
         margin-top: 0;
     }
