@@ -3,6 +3,13 @@
 {% assign temp=null %}
 
 {% for p in site.categories[module] reversed %}
+  {% comment %} The below is so that _notes don't screw up the prev/next
+  {% endcomment %}
+  {% assign tt = p.id | split:'/' %}
+  {% if tt[1] == 'notes' %}
+    {% continue %}
+  {% endif %}
+
   {% if p.url == page.url %}
     {% if temp %}
       {% assign prev=temp %}
