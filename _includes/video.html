@@ -1,0 +1,15 @@
+
+<div class="embedded">
+    {% if include.title %}
+    <h3> {{ include.title}}</h3>
+    {% endif %}
+    <div class="youtube-container">
+        <iframe
+            src="https://www.youtube.com/embed/{{ include.id }}"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    {{ include.caption | markdownify}}
+</div>
